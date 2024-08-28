@@ -1,0 +1,39 @@
+.input_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 300px;
+    height: 45px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    font-size: 15px;
+}
+
+h1 {
+    margin: 15px 0 25px 0;
+}
+
+button {
+    width: 175px;
+    height: 45px;
+    border-radius: 10px;
+    background: #ffffff;
+    cursor: pointer;
+    border: 2px solid #2f97ff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d8d8d8;
+}
+
+p {
+    margin-bottom: 10px;
+}
