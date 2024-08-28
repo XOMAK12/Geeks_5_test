@@ -20,13 +20,13 @@ const userSlice = createSlice({
             }
 
             if (password !== confirmPassword) {
-                state.fieldError = 'Пароли не совпадают';
-                state.error = null;
+                state.fieldError = null;
+                state.error = 'Пароли не совпадают';
                 state.success = null;
                 return;
             }
 
-            if (state.users.some(user => user.username === username)) {
+            if (state.users.find(user => user.username === username)) {
                 state.error = 'Такой пользователь уже существует';
                 state.success = null;
                 state.fieldError = null;
